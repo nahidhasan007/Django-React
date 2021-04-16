@@ -11,6 +11,16 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import Form from './components/Form'
+import PureComp from './components/PureComp'
+import ParentComp from './components/ParentComp'
+import PortalDemo from './components/PortalDemo'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
+import Comp1 from './components/Comp1'
+import { UserProvider } from './components/userContext'
+import PostList from './components/PostList'
+import PostForm from './components/PostForm'
 
 function App() {
   return (
@@ -27,8 +37,18 @@ function App() {
   <ClassClick/>
     <EventBind/>
     <ParentComponent/>
-    <UserGreeting/>*/}
+    <UserGreeting/>
     <NameList/>
+    <ParentComp/>
+    <PortalDemo/>
+    <ClickCounter/>
+    <HoverCounter/>
+    <UserProvider value="Nahid">
+      <Comp1/>
+    </UserProvider>
+    <PostList/>*/}
+    <PostForm/>
+    
       
      
     </div>
